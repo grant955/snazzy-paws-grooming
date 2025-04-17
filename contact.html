@@ -1,0 +1,112 @@
+<!-- Name:Grant Jefferie Morgan Castle
+     Course:BIT607 Web Development
+     Student ID No:5096925
+-->
+
+<!DOCTYPE html>
+<!-- Declares the document type as HTML5 -->
+
+<html lang="en">
+<!-- Sets the language of the page to English -->
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Specifies UTF-8 character encoding for proper text display -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Makes the website responsive on all device sizes -->
+
+  <title>Contact Us - Snazzy Paws Grooming</title>
+  <!-- Title that appears in the browser tab -->
+
+  <link rel="stylesheet" href="css/my-css.css" />
+  <!-- Link to external CSS file for styling the page -->
+</head>
+
+<body>
+  <header>
+    <!-- Top section of the page with the navigation menu -->
+
+    <nav class="navbar">
+      <!-- Site navigation bar -->
+
+      <h1>Snazzy Paws Grooming</h1>
+      <!-- Brand name/logo -->
+
+      <ul class="nav-links">
+        <!-- List of navigation links to other pages -->
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html" aria-current="page" class="active">Contact</a></li>
+        <!-- Contact page is highlighted as active -->
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Main content area -->
+
+    <section class="contact-section">
+      <!-- Contact section containing the map and form -->
+
+      <h2>Contact Us</h2>
+      <!-- Section heading -->
+
+      <div class="map-container">
+        <!-- Container for Google Maps iframe -->
+
+        <iframe
+          src="https://www.google.com/maps?q=Hamilton+New+Zealand&output=embed"
+          width="100%"
+          height="300"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          title="Snazzy Paws Grooming Location on Map"
+        ></iframe>
+        <!-- Embedded map showing the location in Hamilton, New Zealand -->
+      </div>
+
+      <form class="contact-form" action="#" method="post">
+        <!-- Contact form for users to get in touch -->
+
+        <div class="form-group">
+          <label for="name">Your Name<span aria-hidden="true">*</span></label>
+          <input type="text" id="name" name="name" required />
+          <!-- Required text field for the user's name -->
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email<span aria-hidden="true">*</span></label>
+          <input type="email" id="email" name="email" required />
+          <!-- Required email field for the user's contact email -->
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" />
+          <!-- Optional phone number field -->
+        </div>
+
+        <div class="form-group">
+          <label for="comment">Comment</label>
+          <textarea id="comment" name="comment" rows="4"></textarea>
+          <!-- Optional comment box for messages or questions -->
+        </div>
+
+        <button type="submit" class="submit-btn">Submit</button>
+        <!-- Submit button to send the form -->
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Bottom section of the page with business hours and copyright -->
+
+    <p><strong>Opening Hours: Mon–Sat, 9am–5pm | © Snazzy Paws Grooming Services</strong></p>
+  </footer>
+</body>
+</html>

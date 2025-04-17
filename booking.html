@@ -1,0 +1,163 @@
+<!-- Name:Grant Jefferie Morgan Castle
+     Course:BIT607 Web Development
+     Student ID No:5096925
+-->
+
+<!DOCTYPE html>
+<!-- Declares the document type as HTML5 -->
+
+<html lang="en">
+<!-- Sets the language of the page to English -->
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Specifies UTF-8 character encoding for proper text display -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Ensures the page is responsive and adjusts well on all screen sizes -->
+
+  <title>Booking - Snazzy Paws Services</title>
+  <!-- Title of the page that appears in the browser tab -->
+
+  <link rel="stylesheet" href="css/my-css.css" />
+  <!-- Links to the external CSS file for styling the page -->
+</head>
+
+<body>
+  <header>
+    <!-- The header section contains the main navigation bar -->
+
+    <nav class="navbar">
+      <!-- Navigation bar containing links to other pages -->
+
+      <h1>Snazzy Paws Grooming</h1>
+      <!-- Branding or logo -->
+
+      <ul class="nav-links">
+        <!-- Unordered list of navigation links -->
+
+        <li><a href="index.html" aria-current="page" class="active">Home</a></li>
+        <!-- Home page link (current page is marked as active) -->
+
+        <li><a href="services.html">Services</a></li>
+        <!-- Services page link -->
+
+        <li><a href="gallery.html">Gallery</a></li>
+        <!-- Gallery page link -->
+
+        <li><a href="booking.html">Booking</a></li>
+        <!-- Booking page link (current page) -->
+
+        <li><a href="contact.html">Contact</a></li>
+        <!-- Contact page link -->
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Main content section of the page -->
+
+    <section class="booking-section">
+      <!-- Section specifically for the booking form -->
+
+      <h2>Book an Appointment</h2>
+      <!-- Heading for the booking section -->
+
+      <form class="booking-form" aria-label="Appointment booking form">
+        <!-- Form for submitting an appointment booking -->
+
+        <fieldset>
+          <!-- Grouping the Owner Information fields together -->
+
+          <legend>Owner Information</legend>
+          <!-- Legend/title for the owner information section -->
+
+          <div class="form-group">
+            <!-- A container for the owner's name field -->
+
+            <label for="owner">Owner's Name:</label>
+            <!-- Label for the owner's name input -->
+
+            <input type="text" id="owner" name="owner" placeholder="e.g. Jane Doe" required />
+            <!-- Input field for the owner's name, required field -->
+          </div>
+
+          <div class="form-group">
+            <!-- A container for the owner's email field -->
+
+            <label for="email">Email:</label>
+            <!-- Label for the email input -->
+
+            <input type="email" id="email" name="email" placeholder="e.g. jane@example.com" required />
+            <!-- Input field for the owner's email, required field -->
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <!-- Grouping the Pet Details fields together -->
+
+          <legend>Pet Details</legend>
+          <!-- Legend/title for the pet details section -->
+
+          <div class="form-group">
+            <!-- A container for the dog's name field -->
+
+            <label for="dogName">Dog’s Name:</label>
+            <!-- Label for the dog's name input -->
+
+            <input type="text" id="dogName" name="dogName" placeholder="e.g. Bella" />
+            <!-- Input field for the dog's name (optional) -->
+          </div>
+
+          <div class="form-group">
+            <!-- A container for the breed field -->
+
+            <label for="breed">Breed:</label>
+            <!-- Label for the breed input -->
+
+            <input type="text" id="breed" name="breed" placeholder="e.g. Golden Retriever" />
+            <!-- Input field for the dog's breed (optional) -->
+          </div>
+
+          <div class="form-group">
+            <!-- A container for the dog's age field -->
+
+            <label for="age">Age (in years):</label>
+            <!-- Label for the dog's age input -->
+
+            <input type="number" id="age" name="age" min="0" placeholder="e.g. 3" />
+            <!-- Input field for the dog's age (optional) -->
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <!-- Grouping the Additional Information section -->
+
+          <legend>Additional Info</legend>
+          <!-- Legend/title for the additional info section -->
+
+          <div class="form-group">
+            <!-- A container for the special notes/requests field -->
+
+            <label for="notes">Special Notes or Requests:</label>
+            <!-- Label for the notes field -->
+
+            <textarea id="notes" name="notes" rows="4" placeholder="Any allergies, preferences, or special instructions?"></textarea>
+            <!-- Textarea for the owner to add special notes or requests (optional) -->
+          </div>
+        </fieldset>
+
+        <button type="submit" class="submit-btn">Submit Booking</button>
+        <!-- Button to submit the booking form -->
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer section with business hours and copyright information -->
+
+    <p><strong>Opening Hours: Mon–Sat, 9am–5pm | © Snazzy Paws Grooming Services</strong></p>
+    <!-- Business hours and copyright -->
+  </footer>
+</body>
+</html>

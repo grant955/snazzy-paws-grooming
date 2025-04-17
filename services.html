@@ -1,0 +1,140 @@
+<!-- Name:Grant Jefferie Morgan Castle
+     Course:BIT607 Web Development
+     Student ID No:5096925
+-->
+
+<!DOCTYPE html>
+<!-- Declares the HTML5 document type -->
+
+<html lang="en">
+<!-- Sets the language of the document to English -->
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Defines character encoding for proper text display -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Makes the page responsive on all screen sizes -->
+
+  <title>Services - Snazzy Paws Services</title>
+  <!-- Sets the title shown in the browser tab -->
+
+  <link rel="stylesheet" href="css/my-css.css" />
+  <!-- Links to the external CSS file for overall styling -->
+
+  <style>
+    /* Inline styles specifically for this page */
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    /* Makes the table full width and removes spacing between borders */
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: left;
+    }
+    /* Adds borders, padding, and left-aligns table text */
+
+    thead {
+      background-color: #f4f4f4;
+    }
+    /* Gives a light background to the table header for clarity */
+
+    tbody tr:nth-child(even) {
+      background-color: #fafafa;
+    }
+    /* Applies a striped effect to every second row in the table body */
+
+    section {
+      padding: 1rem;
+    }
+    /* Adds padding inside the section for spacing */
+
+    h2 {
+      margin-top: 1rem;
+    }
+    /* Adds space above the heading for better layout */
+  </style>
+</head>
+
+<body>
+  <header>
+    <!-- Top section with navigation menu -->
+
+    <nav class="navbar">
+      <!-- Navigation bar container -->
+
+      <h1>Snazzy Paws Grooming</h1>
+      <!-- Website name or logo as a heading -->
+
+      <ul class="nav-links">
+        <!-- Navigation menu links -->
+
+        <li><a href="index.html" aria-current="page" class="active">Home</a></li>
+        <!-- Link to Home page (marked as active) -->
+
+        <li><a href="services.html">Services</a></li>
+        <!-- Link to Services page -->
+
+        <li><a href="gallery.html">Gallery</a></li>
+        <!-- Link to Gallery page -->
+
+        <li><a href="booking.html">Booking</a></li>
+        <!-- Link to Booking page -->
+
+        <li><a href="contact.html">Contact</a></li>
+        <!-- Link to Contact page -->
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <!-- Main content area for service details -->
+
+    <h2> Dog Grooming Services & Pricing</h2>
+    <!-- Section heading --> 
+
+    <table>
+      <!-- Table displaying list of services and their price ranges -->
+
+      <thead>
+        <!-- Table header row -->
+
+        <tr>
+          <th>Service</th>
+          <th>Price Range (NZD)</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!-- Table body with each service and corresponding price -->
+
+        <tr><td>Bath and Brush</td><td>$25–$50</td></tr>
+        <tr><td>Haircut</td><td>$45–$85</td></tr>
+        <tr><td>Nail Trim</td><td>$10–$20</td></tr>
+        <tr><td>Ear Cleaning</td><td>$10–$15</td></tr>
+        <tr><td>Teeth Brushing</td><td>$10–$15</td></tr>
+        <tr><td>De-shedding Treatment</td><td>$20–$40</td></tr>
+        <tr><td>Flea & Tick Treatment</td><td>$15–$30</td></tr>
+        <tr><td>Spa Package</td><td>$75–$150</td></tr>
+        <tr><td>Express Service</td><td>$15–$25</td></tr>
+        <tr><td>Medicated Bath</td><td>$20–$40</td></tr>
+        <tr><td>Special-breed Cuts</td><td>Varies</td></tr>
+        <tr><td>Puppy Package</td><td>$30–$60</td></tr>
+        <tr><td>Senior Dog Package</td><td>$40–$80</td></tr>
+        <tr><td>Full Grooming Package</td><td>$60–$120</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <!-- Footer with business hours and copyright -->
+
+    <p><strong>Opening Hours: Mon–Sat, 9am–5pm | © Snazzy Paws Grooming Services</strong></p>
+  </footer>
+</body>
+</html>
