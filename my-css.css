@@ -1,0 +1,268 @@
+
+/* ====================
+   Reset & Base Styles
+==================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #fffaf9;
+  color: #333;
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.main-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* ====================
+   Header & Navigation
+==================== */
+header {
+  background-color: #ffe7d4;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1rem 0;
+}
+
+nav.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+nav h1 {
+  font-size: 2rem;
+  color: #c96f46;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.nav-links a {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active,
+.nav-links a[aria-current="page"] {
+  background-color: #fcd1ae;
+  color: #000;
+}
+
+/* ====================
+   Contact Section
+==================== */
+.contact-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.contact-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #c96f46;
+  text-align: center;
+}
+
+/* Google Map */
+.map-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.map-container iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  border: 0;
+  border-radius: 8px;
+}
+
+/* Form */
+.contact-form .form-group {
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #c96f46;
+  outline: none;
+}
+
+.submit-btn {
+  background-color: #c96f46;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #a45730;
+}
+
+/* ====================
+   Gallery Section (4x4 Grid)
+==================== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Creates a 4-column grid */
+  gap: 1rem; /* Spacing between images */
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
+}
+
+
+/* ====================
+   Footer
+==================== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #ffe7d4;
+  color: #444;
+  margin-top: 2rem;
+  font-size: 0.9em;
+}
+
+/* ====================
+   Responsive
+==================== */
+@media (min-width: 600px) {
+  nav.navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+
+  .nav-links {
+    justify-content: flex-end;
+    gap: 2rem;
+  }
+
+  .submit-btn {
+    width: auto;
+    align-self: flex-start;
+  }
+}
+
+/* ====================
+   Booking Section
+==================== */
+.booking-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.booking-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #c96f46;
+  text-align: center;
+}
+
+.booking-form fieldset {
+  border: none;
+  margin-bottom: 2rem;
+}
+
+.booking-form legend {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #c96f46;
+  margin-bottom: 1rem;
+}
+
+.booking-form .form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-form label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.booking-form input,
+.booking-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.booking-form input:focus,
+.booking-form textarea:focus {
+  border-color: #c96f46;
+  outline: none;
+}
+
